@@ -4,11 +4,11 @@ require 'db.php';
 
 $result = $conn->query("SELECT * FROM products");
 
-echo "<h2>Proizvodi</h2>";
+echo "<h2>Products</h2>";
 while ($row = $result->fetch_assoc()) {
     echo "<div>";
-    echo "proizvod"
+    echo "product";
     echo "</div>";
 }
-echo "<br><a href='cart.php'>Pogledaj korpu</a>";
+echo "<br><a href='cart.php'>View cart</a>";
 ?>

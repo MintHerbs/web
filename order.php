@@ -3,10 +3,10 @@ session_start();
 require 'db.php';
 
 $cart = $_SESSION['cart'] ?? [];
-$username = "anonimni"; // ili uzmi iz $_SESSION['username'] ako koristiš login
+$username = "anonymous"; // or take from $_SESSION['username'] if using login
 
 if (empty($cart)) {
-    die("Korpa je prazna.");
+    die("The cart is empty.");
 }
 
 $ids = implode(',', array_map('intval', $cart));
@@ -19,8 +19,8 @@ while ($row = $result->fetch_assoc()) {
     $stmt->close();
 }
 
-unset($_SESSION['cart']); // prazni korpu
+unset($_SESSION['cart']); // empty the cart
 
-echo "Hvala na kupovini, $username!<br>";
-echo "<a href='products.php'>Nazad na proizvode</a>";
+echo "Thank you for your purchase, $username!<br>";
+echo "<a href='products.php'>Back to products</a>";
 ?>

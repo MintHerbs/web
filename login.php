@@ -14,14 +14,14 @@ if ($stmt->num_rows === 1) {
     $stmt->fetch();
 
     if (password_verify($password, $hashed_password)) {
-        echo "Dobrodošao, $username!";
-        // session_start(); // za dalje
+        echo "Welcome, $username!";
+        // session_start(); // for further usage
         // $_SESSION['username'] = $username;
     } else {
-        echo "Pogrešna lozinka.";
+        echo "Incorrect password.";
     }
 } else {
-    echo "Korisnik ne postoji.";
+    echo "User does not exist.";
 }
 
 $stmt->close();

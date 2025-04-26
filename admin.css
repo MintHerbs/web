@@ -1,0 +1,326 @@
+/* ========== RESET & BASE ========== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  /* ========== LAYOUT ========== */
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  .sidebar {
+    width: 200px;
+    background: #fafafa;
+    border-right: 1px solid #e0e0e0;
+    padding: 2rem 1rem;
+  }
+  .sidebar ul {
+    list-style: none;
+  }
+  .sidebar li {
+    padding: 0.75rem 1rem;
+    color: #777;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+  }
+  .sidebar li.active {
+    background: #f0eef8;
+    color: #3a3a3a;
+    font-weight: bold;
+  }
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  /* ========== TOP ACTION BUTTONS ========== */
+  .top-actions {
+    margin-bottom: 1.5rem;
+  }
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  .btn-add {
+    background: #e6f2ff;
+    color: #0047b3;
+  }
+  .btn-remove {
+    background: #ffe6e6;
+    color: #b30000;
+  }
+  .btn-add.active {
+    box-shadow: 0 2px 6px rgba(0,75,180,0.3);
+  }
+  .btn-remove.active {
+    box-shadow: 0 2px 6px rgba(180,0,0,0.3);
+  }
+  
+  /* ========== ADD BOOK FORM ========== */
+  .form-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .form-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-left img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+  .upload-placeholder {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    cursor: pointer;
+    text-align: center;
+  }
+  .upload-placeholder input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .upload-placeholder span {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .upload-placeholder small {
+    margin-top: 0.25rem;
+  }
+  .form-right {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+  .field-full {
+    grid-column: span 2;
+  }
+  .field label {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  .field input {
+    padding: 0.75rem;
+    border: 1px solid #4a4dff;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+  }
+  .checkboxes {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  .checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* ========== DROPDOWN ========== */
+  .dropdown {
+    position: relative;
+  }
+  .dropdown-selected {
+    padding: 0.75rem;
+    border: 1px solid #4a4dff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .arrow {
+    font-size: 0.75rem;
+  }
+  .dropdown-list {
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 10;
+  }
+  .dropdown-list li {
+    padding: 0.75rem;
+    cursor: pointer;
+  }
+  .dropdown-list li:hover {
+    background: #f0f0f0;
+  }
+  
+  /* ========== REMOVE BOOK UI ========== */
+  .remove-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .remove-card .search-container {
+    width: 100%;
+  }
+  .remove-card label {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .remove-card .search-box {
+    display: flex;
+    width: 100%;
+  }
+  .remove-card .search-box input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    background: #f6f8fa;
+    outline: none;
+  }
+  .remove-card .search-box button {
+    padding: 0 1rem;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background: #e6f2ff;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  .remove-card .search-box button:hover {
+    background: #cce4ff;
+  }
+  .center-btn {
+    margin-top: 1rem;
+  }
+  
+  /* ========== USER LOG ========== */
+  #userLogSection h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5b527a;
+    margin-bottom: 2rem;
+  }
+  #userLogSection .search-container {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    background: #f1edf7;
+    border-radius: 40px;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  #userLogSection input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    outline: none;
+  }
+  .icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .filter-btn {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1cbe0;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .filter-btn.active {
+    background: #e8e2f4;
+    border-color: #ccbce8;
+    color: #5b527a;
+  }
+  .user-list {
+    max-width: 600px;
+    margin: 0 auto;
+    list-style: none;
+  }
+  .user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f5fc;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e0f9;
+  }
+  .user-info strong {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  .user-info small {
+    color: #777;
+    font-size: 0.875rem;
+  }
+  .btn-ban {
+    padding: 0.5rem 1rem;
+    background: #e8e2f4;
+    border: none;
+    border-radius: 6px;
+    color: #5b527a;
+    cursor: pointer;
+  }
+  .btn-ban:hover {
+    background: #dccfee;
+  }
+  

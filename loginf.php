@@ -21,14 +21,14 @@
   <body>
     <nav class="navbar collapsible">
       <div class="logo-div">
-        <a href="index.html">Book <br>Haven</a>
+        <a href="index.php">Book <br>Haven</a>
       </div>
       <div class="nav-toggler"><span class="fa-solid fa-list"></span></div>
   
       <ul class="nav-list collapsible__content">
-        <li class="nav-item"><a href="index.html" class="nav-link">Rent your book</a></li>
-        <li class="nav-item"><a href="login.html" class="nav-link">Log-in</a></li>
-        <li class="nav-item nav-item-cart"><a href="cart.html" class="nav-link">Cart</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link">Rent your book</a></li>
+        <li class="nav-item"><a href="loginf.php" class="nav-link">Log-in</a></li>
+        <li class="nav-item nav-item-cart"><a href="cart.php" class="nav-link">Cart</a></li>
       </ul>
     </nav>
     <main>
@@ -43,7 +43,7 @@
             <label for="email">Email address</label><input type="email" id="email" name="email">
             <label for="password">Password</label><input type="password"id="password" name="password">
             <button type="submit" class="btn">Sign in</button>
-            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            <p>Don't have an account? <a href="signup.php">Sign up</a></p>
 
           </form>
         </div>
@@ -54,7 +54,7 @@
 
 <footer>
   <p>&copy;2024 Book Store</p>
-  <a href="signup.html" class="register">Register</a>
+  <a href="signup.php" class="register">Register</a>
 </footer>
 
 

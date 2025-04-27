@@ -21,14 +21,14 @@
   <body>
     <nav class="navbar collapsible">
       <div class="logo-div">
-        <a href="index.html">Book <br>Haven</a>
+        <a href="index.php">Book <br>Haven</a>
       </div>
       <div class="nav-toggler"><span class="fa-solid fa-list"></span></div>
   
       <ul class="nav-list collapsible__content">
-        <li class="nav-item"><a href="index.html" class="nav-link">Rent your book</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link">Login/signup</a></li>
-        <li class="nav-item nav-item-cart"><a href="contact.html" class="nav-link">Cart</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link">Rent your book</a></li>
+        <li class="nav-item"><a href="about.php" class="nav-link">Login/signup</a></li>
+        <li class="nav-item nav-item-cart"><a href="contact.php" class="nav-link">Cart</a></li>
       </ul>
     </nav>
     <main>
@@ -241,7 +241,7 @@
 
   <div class="calltoregister">
     <p>See, one price. Simple.</p>
-    <a href="signup.html" class="register">Register</a>
+    <a href="signup.php" class="register">Register</a>
   </div>
 </section>
 
@@ -250,7 +250,7 @@
 
 <footer>
   <p>&copy;2024 Book Store</p>
-  <a href="signup.html" class="register">Register</a>
+  <a href="signup.php" class="register">Register</a>
 </footer>
 
 

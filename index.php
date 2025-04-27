@@ -21,14 +21,14 @@
   <body>
     <nav class="navbar collapsible">
       <div class="logo-div">
-        <a href="index.html">Book <br>Haven</a>
+        <a href="index.php">Book <br>Haven</a>
       </div>
       <div class="nav-toggler"><span class="fa-solid fa-list"></span></div>
   
       <ul class="nav-list collapsible__content">
-        <li class="nav-item"><a href="index.html" class="nav-link">Rent your book</a></li>
-        <li class="nav-item"><a href="login.html" class="nav-link">Log-in</a></li>
-        <li class="nav-item nav-item-cart"><a href="cart.html" class="nav-link">Cart</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link">Rent your book</a></li>
+        <li class="nav-item"><a href="loginf.php" class="nav-link">Log-in</a></li>
+        <li class="nav-item nav-item-cart"><a href="cart.php" class="nav-link">Cart</a></li>
       </ul>
     </nav>
     <main>
@@ -93,28 +93,28 @@
           <strong>Trending now</strong>
           <div class="trending-container">
             <div class="trending-card">
-              <div class="img-div-trending"><a  href="book.html" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a></div>
+              <div class="img-div-trending"><a  href="book.php" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a></div>
               <strong class="title">The Hobbits</strong>
               <p class="price">1000Rs</p>
               <button class="btn">Add to cart</button>
               <button class="btn">View</button>
             </div>
             <div class="trending-card">
-              <div class="img-div-trending"><a  href="book.html" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a></div>
+              <div class="img-div-trending"><a  href="book.php" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a></div>
               <strong class="title">The Hobbits</strong>
               <p class="price">1000Rs</p>
               <button class="btn">Add to cart</button>
               <button class="btn">View</button>
             </div>
             <div class="trending-card">
-              <div class="img-div-trending"><a  href="book.html" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a></div>
+              <div class="img-div-trending"><a  href="book.php" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a></div>
               <strong class="title">The Hobbits</strong>
               <p class="price">1000Rs</p>
               <button class="btn">Add to cart</button>
               <button class="btn">View</button>
             </div>
             <div class="trending-card">
-              <div class="img-div-trending"><a  href="book.html" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a></div>
+              <div class="img-div-trending"><a  href="book.php" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a></div>
               <strong class="title">The Hobbits</strong>
               <p class="price">1000Rs</p>
               <button class="btn">Add to cart</button>
@@ -145,7 +145,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <a href="book.html" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a>
+                        <a href="book.php" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a>
                         <span>Hobbit</span>
                     </td>
                     <td>Rs 1000</td>
@@ -158,7 +158,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a  href="book.html" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a>
+                        <a  href="book.php" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a>
                         <span>Hobbit</span>
                     </td>
                     <td>Rs 1000</td>
@@ -171,7 +171,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="book.html" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a>
+                        <a href="book.php" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit"></a>
                         <span>Hobbit</span>
                     </td>
                     <td>Rs 1000</td>
@@ -202,28 +202,28 @@
     <strong>New Additions</strong>
     <div class="trending-container">
       <div class="trending-card">
-        <div class="img-div-trending"> <a href="book.html" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit" ></a></div>
+        <div class="img-div-trending"> <a href="book.php" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit" ></a></div>
         <strong class="title">The Hobbits</strong>
         <p class="price">1000Rs</p>
         <button class="btn">Add to cart</button>
         <button class="btn">View</button>
       </div>
       <div class="trending-card">
-        <div class="img-div-trending"> <a href="book.html" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit" ></a></div>
+        <div class="img-div-trending"> <a href="book.php" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit" ></a></div>
         <strong class="title">The Hobbits</strong>
         <p class="price">1000Rs</p>
         <button class="btn">Add to cart</button>
         <button class="btn">View</button>
       </div>
       <div class="trending-card">
-        <div class="img-div-trending"> <a href="book.html" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit" ></a></div>
+        <div class="img-div-trending"> <a href="book.php" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit" ></a></div>
         <strong class="title">The Hobbits</strong>
         <p class="price">1000Rs</p>
         <button class="btn">Add to cart</button>
         <button class="btn">View</button>
       </div>
       <div class="trending-card">
-        <div class="img-div-trending"> <a href="book.html" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit" ></a></div>
+        <div class="img-div-trending"> <a href="book.php" target="_blank"><img src="img/hobbit.jfif" alt="Hobbit" ></a></div>
         <strong class="title">The Hobbits</strong>
         <p class="price">1000Rs</p>
         <button class="btn">Add to cart</button>
@@ -251,7 +251,7 @@
 
   <div class="calltoregister">
     <p>See, one price. Simple.</p>
-    <a href="signup.html" class="register">Register</a>
+    <a href="signup.php" class="register">Register</a>
   </div>
 </section>
 
@@ -260,7 +260,7 @@
 
 <footer>
   <p>&copy;2024 Book Store</p>
-  <a href="signup.html" class="register">Register</a>
+  <a href="signup.php" class="register">Register</a>
 </footer>
 
 
